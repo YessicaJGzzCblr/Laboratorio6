@@ -10,3 +10,12 @@ footer {
     color:royalblue;
     text-align: center; 
 }
+#logo{
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+.nav-link{
+    color: white; !important;
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6-Ejercicio 3.2</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/Style_Pagina3.css" type="text/css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="MenuNav">
+            <!-- Menu de Navegacion -->
+            <nav class="navbar navbar-dark bg-dark justify-content-center">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item"> <a class="nav-link" aria-current="page" href="Index.html"> <img id="logo" src="https://www.umusic.ca/wp-content/themes/umcsandbox_sandbox/custom-contests/custom-styles/5sos-streaming-v2/inc/img/5sos.png"/> </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="Pagina1.html">Biografía</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="Pagina2.html">Integrantes</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="Pagina3.html">Discografía</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <!-- Iconos -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </symbol>
+            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </symbol>
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+        </svg>
+        <!-- Acordion -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Somewhere New
+                </button>
+              </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="alert alert-warning d-flex align-items-center" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                            <div>
+                                <strong> Año:</strong> 2012.
+                            </div>
+                        </div>
+                        <div class="alert alert-info d-flex align-items-center" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                            <div>
+                                <strong> Estilo:</strong> Pop Rock.
+                            </div>
+                        </div>
+                        <div class="alert alert-danger d-flex align-items-center" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                            <div>
+                                <strong>Género: </strong> Rock, Pop.
+                            </div>
+                        </div>
+                        <strong>Canciones.</strong> 
+                        <ul>
+                            <li> Unpredictable </li>
+                            <li> Out Of My Limit </li>
+                            <li> Beside You </li>
+                            <li> Gotta Get Out </li>
+                        </ul>
+                    </div>
+                    <!-- Imagen --> 
+                    <img class="Imagen" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/aca4b0ba-7be6-4e2c-9729-d6ee2a51e86b/dbnqezc-26074e86-fe1b-4041-ab97-2acb470a231e.jpg"/>
+                </div>
+              </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Unplugged
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                        <use xlink:href="#check-circle-fill" />
+                    </svg>
+                    <div>
+                        <strong> Año:</strong> 2012.
+                    </div>
+                </div>
+                <div class="alert alert-info d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                        <use xlink:href="#info-fill" />
+                    </svg>
+                    <div>
+                        <strong> Estilo:</strong> Pop Rock.
+                    </div>
+                </div>
+                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                        <use xlink:href="#info-fill" />
+                    </svg>
+                    <div>
+                        <strong>Género: </strong> Rock, Pop.
+                    </div>
+                </div>
+                <strong>Canciones.</strong> 
+                <ul>
+                    <li> Gotta Get Out (Acoustic) </li>
+                    <li> I Miss You (blink-182 Cover) </li>
+                    <li> Too Late </li>
+                    <li> Jasey Rae (All Time Low Cover, Live From Band Rehearsal) </li>
+                </ul>
+            </div>
+            <!-- Imagen --> 
+            <img class="Imagen" src="https://img.discogs.com/VmbJ6vc7RBtR2U88l4taiDCPE80=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10271501-1494451181-2358.png.jpg"/> 
+                </div>
+              </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    LIVESOS
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                    <div>
+                        <strong> Año:</strong> 2014.
+                    </div>
+                </div>
+                <div class="alert alert-info d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                    <div>
+                        <strong> Estilo:</strong> Pop Rock.
+                    </div>
+                </div>
+                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                    <div>
+                        <strong>Género: </strong> Rock, Pop.
+                    </div>
+                </div>
+                <strong>Canciones.</strong> 
+                <ul>
+                    <li> Out Of My Limit  </li>
+                    <li> Disconnected   </li>
+                    <li> Amnesia  </li>
+                    <li> Beside You </li>
+                    <li> Everything I Didn’t Say  </li>
+                    <li> Long Way Home  </li>
+                    <li> Heartache On The Big Sreen </li>
+                    <li> American Idiot  </li>
+                    <li> Teenage Dream </li>
+                    <li> Good Girls   </li>
+                    <li> What I Live About You </li>
+                    <li> End Up Here </li>
+                    <li>She Looks So Perfect  </li>
+                    <li> What I Like About You (Studio Mix) </li>
+                    <li> Pizza (live) </li>
+                </ul>
+                </div>
+                <!-- Imagen --> 
+                <img class="Imagen" src="https://http2.mlstatic.com/D_NQ_NP_903970-MLM43439419902_092020-O.jpg"/> 
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    5 Seconds Of Summer
+                  </button>
+                </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <div class="alert alert-warning d-flex align-items-center" role="alert">
+                              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                              <div>
+                                  <strong> Año:</strong> 2014.
+                              </div>
+                          </div>
+                          <div class="alert alert-info d-flex align-items-center" role="alert">
+                              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                              <div>
+                                  <strong> Estilo:</strong> Pop Rock.
+                              </div>
+                          </div>
+                          <div class="alert alert-danger d-flex align-items-center" role="alert">
+                              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                              <div>
+                                  <strong>Género: </strong> Rock, Pop.
+                              </div>
+                          </div>
+                          <strong>Canciones.</strong> 
+                          <ul>
+                              <li> She Looks So Perfect </li>
+                              <li> Don’t Stop </li>
+                              <li> Good Girls  </li>
+                              <li> Kiss Me Kiss Me  </li>
+                              <li> Everything I Didn’t Say   </li>
+                              <li> Beside You </li>
+                              <li> End Up Here </li>
+                              <li> Long Way Home </li>
+                              <li> Heartbreak Girl </li>
+                              <li> English Love Affair   </li>
+                              <li> Amnesia </li>
+                          </ul>
+                      </div>
+                      <!-- Imagen --> 
+                      <img class="Imagen" src="https://static.wikia.nocookie.net/5sos/images/e/ed/5sos-cover-album-reista-bravo.jpg/revision/latest?cb=20140707015640&path-prefix=es"/>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Sounds Good Feels Good
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                      <div>
+                          <strong> Año:</strong> 2015.
+                      </div>
+                  </div>
+                  <div class="alert alert-info d-flex align-items-center" role="alert">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                      <div>
+                          <strong> Estilo:</strong> Punk.
+                      </div>
+                  </div>
+                  <div class="alert alert-danger d-flex align-items-center" role="alert">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                      <div>
+                          <strong>Género: </strong> Rock, Pop.
+                      </div>
+                  </div>
+                  <strong>Canciones.</strong> 
+                  <ul>
+                      <li> Money  </li>
+                      <li> She’s Kinda Hot   </li>
+                      <li> Hey Everybody!   </li>
+                      <li> Permanent Vacation </li>
+                      <li> Jet Black Heart   </li>
+                      <li> Catch Fire  </li>
+                      <li> Waste The Night   </li>
+                      <li> Vapor    </li>
+                      <li> Castaway </li>
+                      <li> Fly Away   </li>
+                      <li> Invisible   </li>
+                      <li> Airplanes   </li>
+                      <li> San Francisco   </li>
+                      <li> Outer Space / Carry On </li>
+                  </ul>
+                  </div>
+                  <!-- Imagen --> 
+                  <img class="Imagen" src="https://m.media-amazon.com/images/I/91FE3QLisnL._SS500_.jpg"/> 
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Youngblood 
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body"> 
+                        <div class="alert alert-warning d-flex align-items-center" role="alert">
+                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                          <div>
+                              <strong> Año:</strong> 2018.
+                          </div>
+                      </div>
+                      <div class="alert alert-info d-flex align-items-center" role="alert">
+                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                          <div>
+                              <strong> Estilo:</strong> Punk.
+                          </div>
+                      </div>
+                      <div class="alert alert-danger d-flex align-items-center" role="alert">
+                          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                          <div>
+                              <strong>Género: </strong> Rock, Pop.
+                          </div>
+                      </div>
+                      <strong>Canciones.</strong> 
+                      <ul>
+                          <li> Youngblood  </li>
+                          <li> Want You Back  </li>
+                          <li> Lie To Me   </li>
+                          <li> Valentine </li>
+                          <li> Talk Fast  </li>
+                          <li> Moving Along  </li>
+                          <li> If Walls Could Talk </li>
+                          <li> Better Man  </li>
+                          <li> More </li>
+                          <li> Why Won’t You Love Me? </li>
+                          <li> Woke Up In Japan  </li>
+                          <li> End Up Here </li>
+                          <li> Empty Wallets  </li>
+                          <li> Ghost Of You </li>
+                      </ul>
+                      </div>
+                      <!-- Imagen --> 
+                      <img class="Imagen" src="http://www.rocktotal.com/wp-content/uploads/2018/06/5-seconds-of-summer-youngblood.jpg"/> 
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              CALM
+                          </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="alert alert-warning d-flex align-items-center" role="alert">
+                              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                              <div>
+                                  <strong> Año:</strong> 2020.
+                              </div>
+                          </div>
+                          <div class="alert alert-info d-flex align-items-center" role="alert">
+                              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                              <div>
+                                  <strong> Estilo:</strong> Punk.
+                              </div>
+                          </div>
+                          <div class="alert alert-danger d-flex align-items-center" role="alert">
+                              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                              <div>
+                                  <strong>Género: </strong> Rock, Pop.
+                              </div>
+                          </div>
+                          <strong>Canciones.</strong> 
+                          <ul>
+                              <li> Red Desert  </li>
+                              <li> No Shame    </li>
+                              <li> Old Me  </li>
+                              <li> Easier </li>
+                              <li> Teeth </li>
+                              <li> Wildflower  </li>
+                              <li> Best Years </li>
+                              <li> Not In The Same Way  </li>
+                              <li> Lover Of Mine </li>
+                              <li> Thin White Lies   </li>
+                              <li> Lonely Heart </li>
+                              <li> High </li>
+                          </ul>
+                          </div>
+                          <!-- Imagen --> 
+                          <img class="Imagen" src="https://elrescatemusical.com/wp-content/uploads/2020/03/EQBvm5FUcAAObMh-e1586168700686.jpg"/> 
+                        </div>
+        </div>
+        </div>
+    </div>
+    <br>
+        <footer>
+            <p>Laboratorio 6 - Ejercicio 3.2</p>
+        </footer>
+    </div>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

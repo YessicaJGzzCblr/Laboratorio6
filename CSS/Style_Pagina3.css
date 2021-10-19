@@ -1,0 +1,29 @@
+#logo{
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+.nav-link{
+    color: white; !important;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.accordion-body{
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Imagen{
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+footer {
+    color:royalblue;
+    text-align: center; 
+}
